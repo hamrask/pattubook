@@ -20,7 +20,7 @@ mongoose.connect(process.env.mongoose_connection, { useNewUrlParser: true, useUn
         console.log(err);
     });
 
-const port = process.env.PORT | 3000;
+const port = process.env.PORT;
 app.listen(port, () => {
     console.log('application started in port ', port)
 });
